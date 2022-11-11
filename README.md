@@ -3,7 +3,7 @@
 ## Objetivo:
     1. Principal objetivo do exercício, é que o programador(a) desenvolva uma simples página web contendo a sua foto de apresentação, como também contenha os links de acesso as suas redes sociais, para que o visitante possa entrar em contato e saber mais quem é você.
 
-## Requísitos:
+## Requisitos:
     1. HTML.
     2. CSS.
 
