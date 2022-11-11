@@ -1,0 +1,136 @@
+:root {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #e94560;
+    --bg-terciary: #ffffff;
+    --bg-quartiary: #d3d3d3;
+    --font-family: 'Lato', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    font-size: 10px;
+    font-family: var(--font-family);
+    color: var(--bg-terciary);
+    background-color: var(--bg-primary);
+}
+
+.container {
+    width: 100%;
+    max-width: 34.0rem;
+    margin: auto;
+    padding: 1.0rem;
+}
+
+.container .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3.0rem;
+    width: 100%;
+    height: auto;
+    padding: 0rem 1rem;
+}
+
+.container .profile .circle {
+    width: 18.0rem;
+    height: 18.0rem;
+    overflow: hidden;
+    border-radius: 50%;
+    outline: 0.4rem solid var(--bg-secondary);
+    outline-offset: 0.6rem;
+}
+
+.container .profile .circle img {
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+}
+
+.container .profile .description {
+    width: 100%;
+    text-align: center;
+}
+
+.container .profile .description h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+    text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.container .profile .description span {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--bg-quartiary);
+    text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.container .social {
+    width: 100%;
+    padding: 3.0rem 1.0rem;
+}
+
+.container .social ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    width: 100%;
+    list-style: none;
+}
+
+.container .social ul li {
+    width: 100%;
+}
+
+.container .social ul li .link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    padding: 1.0rem;
+    font-size: 1.6rem;
+    color: var(--bg-terciary);
+    background-color: var(--bg-secondary);
+    border-radius: 0.3rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 768px) {
+    html, body {
+        font-size: 12px;
+    }
+
+    .container .profile {
+        row-gap: 3.5rem;
+    }
+
+    .container .profile .description h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .container .profile .description span {
+        font-size: 1.9rem;
+    }
+
+    .container .social {
+        padding: 4.0rem 1.0rem;
+    }
+
+    .container .social ul li .link:hover {
+        color: var(--bg-terciary);
+        background-color: #e9456021;
+        outline: 0.2rem solid var(--bg-secondary);
+        transition: all 0.2s;
+    }
+}
