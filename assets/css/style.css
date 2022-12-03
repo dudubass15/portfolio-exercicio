@@ -44,16 +44,22 @@ html, body {
 .container .profile .circle {
     width: 18.0rem;
     height: 18.0rem;
-    overflow: hidden;
     border-radius: 50%;
-    outline: 0.4rem solid var(--bg-secondary);
-    outline-offset: 0.6rem;
+    /* overflow: hidden; */
+    /* outline: 0.4rem solid var(--bg-secondary);
+    outline-offset: 0.6rem; */
 }
 
 .container .profile .circle img {
     width: 100%;
-    background-position: center;
+    height: 100%;
     object-fit: cover;
+    object-position: top;
+    padding: 0.6rem;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    box-shadow: 0rem 0rem 0rem 0.4rem var(--bg-secondary);
 }
 
 .container .profile .description {
@@ -69,7 +75,7 @@ html, body {
 }
 
 .container .profile .description span {
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 300;
     color: var(--bg-quartiary);
     text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
